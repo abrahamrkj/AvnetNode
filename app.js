@@ -728,9 +728,9 @@ app.get('/addProductWithRFID', function(req, res) {
 
 
 server.listen(nconf.get('httpPort'));
-httpsServer.listen(9000);
+httpsServer.listen(8080);
 logger.debug('Server Initiated ');
-logger.debug('HTTP Server Initiated on port: '+nconf.get('httpPort')+''+'['+userIp+']');
+logger.debug('HTTP Server Initiated on port: 8080'+'['+userIp+']');
 
 function sendResponse(json,handler,object){
     var arr = object[handler]().split(",");
